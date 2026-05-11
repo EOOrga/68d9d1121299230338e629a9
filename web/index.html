@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1F314E">
+  <meta name="description" content="ROMAN HENRI CHARLES is a local-first Android operations app for inventory, compliance, maintenance, and payroll reports.">
+  <title>ROMAN HENRI CHARLES</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    :root {
+      --ink: #172235;
+      --primary: #2f4560;
+      --deep: #1f314e;
+      --amber: #c9892b;
+      --green: #2f7d66;
+      --paper: #f6f4ed;
+      --surface: #fffdf8;
+      --line: #ddd6ca;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .nav {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px clamp(18px, 4vw, 56px);
+      color: white;
+      background: linear-gradient(180deg, rgba(23, 34, 53, 0.78), rgba(23, 34, 53, 0));
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+    }
+
+    .brand img {
+      width: 38px;
+      height: 38px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      align-items: end;
+      padding: 112px clamp(18px, 5vw, 72px) 72px;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(16, 25, 39, 0.88), rgba(16, 25, 39, 0.38)),
+        url("assets/featured.png") center / cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.8rem, 8vw, 6.8rem);
+      line-height: 0.95;
+      font-weight: 900;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 0 28px;
+      font-size: clamp(1.05rem, 2vw, 1.35rem);
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+      background: var(--amber);
+      color: #201508;
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.14);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+    }
+
+    section {
+      padding: 64px clamp(18px, 5vw, 72px);
+    }
+
+    .section-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 0 0 32px;
+      color: #4d5968;
+      font-size: 1.08rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .feature {
+      min-height: 220px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .feature strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-size: 1.08rem;
+    }
+
+    .band {
+      background: var(--deep);
+      color: white;
+    }
+
+    .band .lead {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .stat {
+      padding: 20px;
+      border-left: 4px solid var(--amber);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .stat span {
+      display: block;
+      font-size: 2.1rem;
+      font-weight: 900;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .contact-panel {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    footer {
+      padding: 28px clamp(18px, 5vw, 72px);
+      border-top: 1px solid var(--line);
+      color: #576273;
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 82vh;
+      }
+
+      .grid,
+      .stats,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="brand">
+      <img src="assets/icon.png" alt="">
+      <span>ROMAN HENRI CHARLES</span>
+    </div>
+    <div class="nav-links">
+      <a href="#workspace">Workspace</a>
+      <a href="#reports">Reports</a>
+      <a href="#privacy">Privacy</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>ROMAN HENRI CHARLES</h1>
+      <p>Operations tracking for inventory counts, compliance reporting, maintenance requests, and payroll preparation on Android.</p>
+      <div class="actions">
+        <a class="button" href="mailto:support@romanhenricharles.com">Contact support</a>
+        <a class="button secondary" href="#workspace">View workflow</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="workspace">
+    <div class="section-inner">
+      <h2>A practical workspace for daily business tasks.</h2>
+      <p class="lead">The Android app focuses on the records a manager checks every day: what stock needs attention, which requests are open, and which reports are ready for review.</p>
+      <div class="grid">
+        <div class="feature">
+          <strong>Inventory tracking</strong>
+          <p>Record item quantities, storage locations, reorder points, and stock lines that need attention.</p>
+        </div>
+        <div class="feature">
+          <strong>Compliance reporting</strong>
+          <p>Keep safety registers, certificates, and review notes organized in one local queue.</p>
+        </div>
+        <div class="feature">
+          <strong>Maintenance requests</strong>
+          <p>Capture issues, owners, due windows, and completion status before tasks get lost.</p>
+        </div>
+        <div class="feature">
+          <strong>Payroll preparation</strong>
+          <p>Track weekly hours summaries, approval notes, and payroll follow-ups from the same app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reports" class="band">
+    <div class="section-inner">
+      <h2>Clear summaries without cloud dependencies.</h2>
+      <p class="lead">Dashboard and report views help teams spot restock risks, active maintenance, open compliance checks, and payroll items that still need review.</p>
+      <div class="stats">
+        <div class="stat"><span>4</span>Core operation areas</div>
+        <div class="stat"><span>0</span>Accounts required</div>
+        <div class="stat"><span>1</span>Device-local data store</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="section-inner contact">
+      <div>
+        <h2>Built for local records.</h2>
+        <p class="lead">The app stores operational records on the device. It does not create accounts, upload records to a server, collect analytics, or use advertising identifiers.</p>
+      </div>
+      <div class="contact-panel">
+        <strong>Support</strong>
+        <p>ROMAN HENRI CHARLES</p>
+        <p><a href="mailto:support@romanhenricharles.com">support@romanhenricharles.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>ROMAN HENRI CHARLES Android operations app.</span>
+  </footer>
+</body>
+</html>
