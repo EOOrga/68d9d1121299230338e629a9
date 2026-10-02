@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "com.romanhenricharles.operations": {
+      "title": "ROMAN HENRI CHARLES",
+      "short_description": "Track inventory, reports, maintenance, and payroll tasks locally.",
+      "full_description": "ROMAN HENRI CHARLES gives small operations teams a focused place to manage daily business records without accounts, cloud sync, or external services.\n\nTrack stock counts, reorder points, compliance follow-ups, maintenance requests, and payroll preparation items from a multi-screen Android workspace. Dashboard summaries and report views help managers see what needs attention before daily work piles up.\n\nAll records are saved on the device using local app storage, so the workflow stays simple for teams that need practical tracking without a backend.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:22:10.279126+00:00"
+    }
+  }
+}
