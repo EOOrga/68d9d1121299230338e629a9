@@ -8,10 +8,10 @@ const developerName = 'ROMAN HENRI CHARLES';
 const supportEmail = 'support@romanhenricharles.com';
 const screenshotMode = bool.fromEnvironment('SCREENSHOT_MODE');
 
-const brandPrimary = Color(0xFF2F4560);
+const brandPrimary = Color(0xFF558B2F);
 const brandDeep = Color(0xFF1F314E);
-const brandAmber = Color(0xFFC9892B);
-const brandGreen = Color(0xFF2F7D66);
+const brandAmber = Color(0xFF1565C0);
+const brandGreen = Color(0xFF8BC34A);
 const brandSurface = Color(0xFFF6F4ED);
 
 void main() {
@@ -442,7 +442,7 @@ List<WorkRecord> _starterWork() {
     WorkRecord(
       id: 'wrk-001',
       type: WorkType.compliance,
-      title: 'Monthly safety register',
+      title: 'ROMAN HENRI CHARLES',
       owner: 'Operations lead',
       status: WorkStatus.ready,
       priority: 'High',

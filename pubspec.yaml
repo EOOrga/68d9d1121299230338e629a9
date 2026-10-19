@@ -1,4 +1,4 @@
-name: roman_henri_charles
+name: mbapo
 description: "Local operations workspace for ROMAN HENRI CHARLES business records."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -59,8 +59,8 @@ flutter_launcher_icons:
   android: true
   ios: false
   image_path: "docs/icon.png"
-  adaptive_icon_background: "#1F314E"
-  adaptive_icon_foreground: "docs/icon.png"
+  adaptive_icon_background: "#8BC34A"
+  adaptive_icon_foreground: docs/icon.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
