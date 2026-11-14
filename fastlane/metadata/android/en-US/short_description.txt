@@ -1,0 +1,1 @@
+Track inventory, reports, maintenance, and payroll tasks locally.
