@@ -1,0 +1,5 @@
+ROMAN HENRI CHARLES gives small operations teams a focused place to manage daily business records without accounts, cloud sync, or external services.
+
+Track stock counts, reorder points, compliance follow-ups, maintenance requests, and payroll preparation items from a multi-screen Android workspace. Dashboard summaries and report views help managers see what needs attention before daily work piles up.
+
+All records are saved on the device using local app storage, so the workflow stays simple for teams that need practical tracking without a backend.
